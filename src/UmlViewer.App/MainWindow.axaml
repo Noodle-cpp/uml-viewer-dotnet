@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:UmlViewer.App"
+        x:Class="UmlViewer.App.MainWindow"
+        Title="UML Viewer (.NET)"
+        Width="1280"
+        Height="800"
+        Background="#161C20">
+  <Grid ColumnDefinitions="*,280" RowDefinitions="Auto,*">
+    <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="12,8" Spacing="4">
+      <TextBlock x:Name="HeaderText" Foreground="#EDECE4" FontSize="14"/>
+      <StackPanel Orientation="Horizontal" Spacing="8">
+        <Button x:Name="DeclutterButton" Content="Declutter none" Padding="8,4"/>
+        <Button x:Name="RegenButton" Content="Regen" Padding="8,4"/>
+        <TextBlock x:Name="MailStatusText" VerticalAlignment="Center" Foreground="#5A6D64" FontSize="11"/>
+        <TextBlock VerticalAlignment="Center" Foreground="#5A6D64" Text="Pan: arrows / Ctrl+drag · Back: ← on diagram or Esc · Drill: double-click"/>
+        <TextBlock x:Name="TitleText" VerticalAlignment="Center" Foreground="#E8C448" FontWeight="SemiBold"/>
+      </StackPanel>
+    </StackPanel>
+
+    <local:DiagramCanvas Grid.Row="1" Grid.Column="0" x:Name="Canvas" Margin="4"/>
+
+    <Border Grid.Row="1" Grid.Column="1" Background="#1A2428" Padding="12">
+      <Grid RowDefinitions="Auto,Auto,*,Auto,Auto">
+        <TextBlock Grid.Row="0" Text="Diagrams" Foreground="#5A6D64" FontSize="11" Margin="0,0,0,4"/>
+        <StackPanel Grid.Row="1" Spacing="4" Margin="0,0,0,12">
+          <Button x:Name="RealDiagramButton" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+                  Padding="8,6" Background="Transparent"/>
+          <StackPanel x:Name="ProposalPanel" Spacing="4"/>
+          <Button x:Name="NewProposalButton" Content="+ New proposal" HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Left" Padding="8,6"/>
+        </StackPanel>
+        <DockPanel Grid.Row="2">
+          <TextBlock DockPanel.Dock="Top" x:Name="InspectorTitle" FontWeight="SemiBold"
+                     Foreground="#EDECE4" Margin="0,0,0,8"/>
+          <ScrollViewer>
+            <TextBlock x:Name="InspectorBody" TextWrapping="Wrap" Foreground="#9DB8A8" FontSize="13"/>
+          </ScrollViewer>
+        </DockPanel>
+        <Button Grid.Row="3" x:Name="OpenDetailButton" Content="Class detail…"
+                Click="OnOpenDetailClick" Margin="0,8,0,0" HorizontalAlignment="Stretch"/>
+        <Button Grid.Row="4" x:Name="OpenSourceButton" Content="Open source file"
+                Click="OnOpenSourceClick" Margin="0,8,0,0" HorizontalAlignment="Stretch"/>
+      </Grid>
+    </Border>
+  </Grid>
+</Window>

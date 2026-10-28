@@ -1,0 +1,19 @@
+{
+  "title": "Glpi Sync",
+  "prefix": "TP.Cmdb.Glpi.Sync",
+  "hierarchical": true,
+  "sources": [
+    {
+      "lang": "csharp",
+      "root": "D:/Users/Noodle/Desktop/work_tp/TP.Cmdb.Glpi.Sync.Service/TP.Cmdb.Glpi.Sync.Application"
+    },
+    {
+      "lang": "csharp",
+      "root": "D:/Users/Noodle/Desktop/work_tp/TP.Cmdb.Glpi.Sync.Service/TP.Cmdb.Glpi.Sync.Domain"
+    },
+    {
+      "lang": "csharp",
+      "root": "D:/Users/Noodle/Desktop/work_tp/TP.Cmdb.Glpi.Sync.Service/TP.Cmdb.Glpi.Sync.Infrastructure"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/UmlViewer.App/UmlViewer.App.csproj" />
+    <Project Path="src/UmlViewer.Cli/UmlViewer.Cli.csproj" />
+    <Project Path="src/UmlViewer.Core/UmlViewer.Core.csproj" />
+    <Project Path="src/UmlViewer.Engine/UmlViewer.Engine.csproj" />
+    <Project Path="src/UmlViewer.Scan/UmlViewer.Scan.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/UmlViewer.Tests/UmlViewer.Tests.csproj" />
+  </Folder>
+</Solution>

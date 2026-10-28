@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "UmlViewer.App": {
+      "commandName": "Project",
+      "commandLineArgs": "--root \"D:\\Users\\Noodle\\Desktop\\work_tp\\TP.Cmdb.Glpi.Sync.Service\" --ir \"D:\\Users\\Noodle\\Desktop\\ub\\uml-viewer\\target\\glpi-scan.edn\""
+    }
+  }
+}
