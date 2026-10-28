@@ -2,6 +2,8 @@
 
 Interactive UML companion **without Java**. Reads the same `.metrics/` and IR **`.edn`** as Clojure `uml-viewer`.
 
+**Полная инструкция (RU):** [docs/USAGE.ru.md](docs/USAGE.ru.md)
+
 ## Projects
 
 | Project | Role |
